@@ -221,15 +221,6 @@ section {
     text-align: center;
 }
 
-.home {
-    min-height: 115vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(images/backwebtrungthu.jpg);
-    background-size: cover;
-    background-position: center;
-}
 
 
 .home .content {
@@ -483,6 +474,9 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột đều nhau */
+    gap: 16px;
 }
 
 .blogs .box-container .box{
@@ -510,8 +504,8 @@ section {
 }
 
 .blogs .box-container .box .content title{
-    font-size: 2.5rem;
-    line-height: 1.5;
+    font-size: 1.5rem;
+    line-height: 0.5;
     color: #fff;
 }
 
