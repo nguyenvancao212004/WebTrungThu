@@ -93,12 +93,12 @@ section {
 }
 
 .header .logo img {
-    height: 8rem;
+    height: 6rem;
 }
 
 .header .navbar a {
     margin: 0 1rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #fff;
 }
 
@@ -222,9 +222,8 @@ section {
 }
 
 
-
 .home .content {
-    max-width: 100rem;
+    max-width: 60rem;
     text-align: center;
 }
 
@@ -451,7 +450,7 @@ section {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: #13131a;
+    background: var(--bg);
     border: var(--border);
 }
 
@@ -501,8 +500,8 @@ section {
 }
 
 .blogs .box-container .box .content title{
-    font-size: 1.5rem;
-    line-height: 0.5;
+    font-size: 2.5rem;
+    line-height: 1.5;
     color: #fff;
 }
 
@@ -597,28 +596,13 @@ section {
     section {
         padding: 2rem;
     }
-
-    /* NEW: Form elements scaling */
-    form input,
-    form select,
-    form textarea,
-    form button {
-        font-size: 1.6rem;
-        width: 100%;
-        padding: 1rem;
-        margin-bottom: 1.5rem;
-        box-sizing: border-box;
-    }
 }
 
 @media (max-width: 768px) {
     #menu-btn {
         display: inline-block;
     }
-    .box-container{
-        width:100%;
-        margin: 5px 0;
-    }
+
     .header .navbar {
         position: absolute;
         top: 100%;
@@ -626,8 +610,6 @@ section {
         background: #fff;
         width: 30rem;
         height: calc(100vh - 9.5rem);
-        overflow-y: auto; /* NEW: fix overflow menu */
-        z-index: 1000;
     }
 
     .header .navbar.active {
@@ -660,42 +642,12 @@ section {
     .home .content p {
         font-size: 1.5rem;
     }
-
-    /* NEW: Responsive form layout */
-    form {
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-    }
-
-    form input,
-    form select,
-    form textarea,
-    form button {
-        font-size: 1.6rem;
-        padding: 1rem;
-        width: 100%;
-        box-sizing: border-box;
-    }
 }
 
 @media (max-width: 450px) {
     html {
         font-size: 50%;
     }
-
-    /* NEW: Adjust smaller spacing for tiny screens */
-    form input,
-    form select,
-    form textarea,
-    form button {
-        font-size: 1.4rem;
-        padding: 0.8rem;
-    }
-
-    .header .navbar {
-        width: 100%; /* Full width menu for small phones */
-    }
 }
+
 
