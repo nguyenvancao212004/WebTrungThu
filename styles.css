@@ -474,9 +474,6 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cột đều nhau */
-    gap: 16px;
 }
 
 .blogs .box-container .box{
