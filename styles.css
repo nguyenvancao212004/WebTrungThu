@@ -597,6 +597,18 @@ section {
     section {
         padding: 2rem;
     }
+
+    /* NEW: Form elements scaling */
+    form input,
+    form select,
+    form textarea,
+    form button {
+        font-size: 1.6rem;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 768px) {
@@ -611,6 +623,8 @@ section {
         background: #fff;
         width: 30rem;
         height: calc(100vh - 9.5rem);
+        overflow-y: auto; /* NEW: fix overflow menu */
+        z-index: 1000;
     }
 
     .header .navbar.active {
@@ -643,10 +657,42 @@ section {
     .home .content p {
         font-size: 1.5rem;
     }
+
+    /* NEW: Responsive form layout */
+    form {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    form input,
+    form select,
+    form textarea,
+    form button {
+        font-size: 1.6rem;
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 450px) {
     html {
         font-size: 50%;
     }
+
+    /* NEW: Adjust smaller spacing for tiny screens */
+    form input,
+    form select,
+    form textarea,
+    form button {
+        font-size: 1.4rem;
+        padding: 0.8rem;
+    }
+
+    .header .navbar {
+        width: 100%; /* Full width menu for small phones */
+    }
 }
+
