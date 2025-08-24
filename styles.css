@@ -615,7 +615,10 @@ section {
     #menu-btn {
         display: inline-block;
     }
-
+    .box-container{
+        width:100%;
+        margin: 5px 0;
+    }
     .header .navbar {
         position: absolute;
         top: 100%;
